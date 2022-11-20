@@ -1,0 +1,12 @@
+back/node_modules
+back/dist
+back/mongo-data
+back/public
+back/.env
+back/.env.example
+back/.gitignore
+back/docker-compose.yml
+
+front/node_modules
+front/dist
+front/.gitignore
