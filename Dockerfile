@@ -22,9 +22,9 @@ COPY ./back/package.json ./
 COPY ./back/package-lock.json ./
 RUN npm ci --only=production
 
-EXPOSE 3000
-ENV PORT=3000
+ENV NODE_ENV=production
 ENV STATIC_FILES_PATH=./public
-ENV API_MOCK=true
+ENV API_MOCK=false
+ENV CORS_ORIGIN=false
 
 CMD node index
